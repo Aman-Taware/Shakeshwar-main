@@ -454,7 +454,7 @@ const PropertyDetailPage = () => {
                   {displayProperty.videoUrl && (
                     <div className="mt-12">
                       <h3 className="text-xl font-bold mb-6">Video Tour</h3>
-                      <div className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                      <div className="relative rounded-lg overflow-hidden" style={{ paddingBottom: '56.25%', height: 0 }}>
                         <iframe
                           src={displayProperty.videoUrl}
                           title={`${displayProperty.name} Video Tour`}
@@ -462,6 +462,7 @@ const PropertyDetailPage = () => {
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
                           className="absolute inset-0 w-full h-full"
+                          loading="lazy"
                         ></iframe>
                       </div>
                     </div>

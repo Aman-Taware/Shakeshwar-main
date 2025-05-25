@@ -14,7 +14,6 @@ const FloorPlanSection = ({ flatTypes = [] }) => {
   const [selectedTypeIndex, setSelectedTypeIndex] = useState(0);
   const [selectedConfigIndex, setSelectedConfigIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [is2DView, setIs2DView] = useState(true); // Always true for now, but we keep for future implementation
   
   // Reset configuration selection when apartment type changes
   useEffect(() => {
@@ -116,29 +115,12 @@ const FloorPlanSection = ({ flatTypes = [] }) => {
         </div>
       </div>
       
-      {/* 2D/3D View Toggle - Keeping structure for future, but only showing 2D for now */}
-      <div className="flex justify-end mb-4">
-        <div className="flex items-center bg-white rounded-full border border-gray-200 p-1 shadow-sm">
-          <button
-            className={`px-4 py-1.5 rounded-full text-sm font-medium bg-deep-teal text-white shadow-sm`}
-          >
-            2D
-          </button>
-          <button
-            className={`px-4 py-1.5 rounded-full text-sm font-medium text-gray-400 cursor-not-allowed`}
-            title="3D View Coming Soon"
-          >
-            3D
-          </button>
-        </div>
-      </div>
-      
       {/* Floor Plan Content */}
       <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-100">
         <div className="relative">
           <img
             src={currentImage}
-            alt={`${currentType.type} Floor Plan`}
+            alt={`${currentType.type} Floor Plan - ${currentConfig.superBuiltUpArea} sq.ft`}
             className="w-full h-auto object-contain rounded-lg"
             onError={(e) => {
               e.target.src = '/images/website/placeholder-floorplan.jpg';
@@ -205,7 +187,7 @@ const FloorPlanSection = ({ flatTypes = [] }) => {
             <div className="max-w-4xl w-full">
               <img
                 src={currentImage}
-                alt={`${currentType.type} Floor Plan`}
+                alt={`${currentType.type} Floor Plan - ${currentConfig.superBuiltUpArea} sq.ft`}
                 className="w-full h-auto object-contain"
                 onError={(e) => {
                   e.target.src = '/images/website/placeholder-floorplan.jpg';

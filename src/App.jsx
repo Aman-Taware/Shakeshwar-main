@@ -6,9 +6,9 @@ import ProjectsPage from './pages/ProjectsPage';
 import OngoingProjectsPage from './pages/OngoingProjectsPage';
 import CompletedProjectsPage from './pages/CompletedProjectsPage';
 import PropertyDetailPage from './pages/PropertyDetailPage';
+import ContactPage from './pages/ContactPage';
 // Import other pages here as you create them
 // import AboutPage from './pages/AboutPage'; 
-// import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -19,9 +19,9 @@ function App() {
         <Route path="/projects/ongoing" element={<OngoingProjectsPage />} />
         <Route path="/projects/completed" element={<CompletedProjectsPage />} />
         <Route path="/property/:propertyId" element={<PropertyDetailPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         {/* Define other routes here */}
         {/* <Route path="/about" element={<AboutPage />} /> */}
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
     </Layout>
   );

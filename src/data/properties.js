@@ -71,12 +71,12 @@ const mockProperties = [
         type: '1 BHK',
         configurations: [
           {
-            name: '1 BHK Compact',
+            name: '1 BHK - 580',
             carpetArea: 580,
             builtUpArea: 750,
             superBuiltUpArea: 634,
             price: 4500000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-compact-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-580-2d.jpg',
             bedrooms: 1,
             bathrooms: 1,
             balconies: 1,
@@ -84,12 +84,12 @@ const mockProperties = [
             facing: 'East',
           },
           {
-            name: '1 BHK Premium',
+            name: '1 BHK - 600',
             carpetArea: 600,
             builtUpArea: 770,
             superBuiltUpArea: 636,
             price: 4700000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-premium-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-600-2d.jpg',
             bedrooms: 1,
             bathrooms: 1,
             balconies: 1,
@@ -97,12 +97,12 @@ const mockProperties = [
             facing: 'North-East',
           },
           {
-            name: '1 BHK Deluxe',
+            name: '1 BHK - 620',
             carpetArea: 620,
             builtUpArea: 790,
             superBuiltUpArea: 649,
             price: 4900000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-deluxe-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-620-2d.jpg',
             bedrooms: 1,
             bathrooms: 1,
             balconies: 1,
@@ -110,12 +110,12 @@ const mockProperties = [
             facing: 'East',
           },
           {
-            name: '1 BHK Large',
+            name: '1 BHK - 645',
             carpetArea: 645,
             builtUpArea: 810,
             superBuiltUpArea: 671,
             price: 5100000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-large-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-645-2d.jpg',
             bedrooms: 1,
             bathrooms: 1,
             balconies: 2,
@@ -123,12 +123,12 @@ const mockProperties = [
             facing: 'West',
           },
           {
-            name: '1 BHK Grand',
+            name: '1 BHK - 660',
             carpetArea: 660,
             builtUpArea: 830,
             superBuiltUpArea: 680,
             price: 5300000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-grand-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-1bhk-660-2d.jpg',
             bedrooms: 1,
             bathrooms: 1,
             balconies: 2,
@@ -141,12 +141,12 @@ const mockProperties = [
         type: '2 BHK',
         configurations: [
           {
-            name: '2 BHK Classic',
+            name: '2 BHK - 850',
             carpetArea: 850,
             builtUpArea: 1050,
             superBuiltUpArea: 1150,
             price: 7800000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2bhk-classic-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2bhk-850-2d.jpg',
             bedrooms: 2,
             bathrooms: 2,
             balconies: 1,
@@ -154,12 +154,12 @@ const mockProperties = [
             facing: 'North-East',
           },
           {
-            name: '2 BHK Premium',
+            name: '2 BHK - 950',
             carpetArea: 950,
             builtUpArea: 1150,
             superBuiltUpArea: 1250,
             price: 8500000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2bhk-premium-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2bhk-950-2d.jpg',
             bedrooms: 2,
             bathrooms: 2,
             balconies: 2,
@@ -172,12 +172,12 @@ const mockProperties = [
         type: '2.5 BHK',
         configurations: [
           {
-            name: '2.5 BHK Luxe',
+            name: '2.5 BHK - 1050',
             carpetArea: 1050,
             builtUpArea: 1250,
             superBuiltUpArea: 1350,
             price: 9200000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2.5bhk-luxe-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-2.5bhk-1050-2d.jpg',
             bedrooms: 2,
             bathrooms: 2,
             balconies: 2,
@@ -190,12 +190,12 @@ const mockProperties = [
         type: '3 BHK',
         configurations: [
           {
-            name: '3 BHK Elite',
+            name: '3 BHK - 1250',
             carpetArea: 1250,
             builtUpArea: 1450,
             superBuiltUpArea: 1550,
             price: 10500000,
-            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-3bhk-elite-2d.jpg',
+            floorPlan: '/images/property/shankeshwar-pearl/floorplans/pearl-3bhk-1250-2d.jpg',
             bedrooms: 3,
             bathrooms: 3,
             balconies: 2,
@@ -292,41 +292,164 @@ const mockProperties = [
       state: 'Maharashtra',
       zipCode: '412105',
       coordinates: {
-        latitude: 18.6791,
-        longitude: 73.8249,
+        lat: 18.6791,
+        lng: 73.8249,
       },
       landmarks: [
-        { name: 'D Y Patil International School', distance: '1.8 km', type: 'school' },
-        { name: 'Moshi Bus Terminal', distance: '1 km', type: 'transport' },
-        { name: 'Aditya Birla Hospital', distance: '5.2 km', type: 'hospital' },
-      ]
+        { name: 'D Y Patil International School', distance: '1.8 km', type: 'education', details: 'Premier educational institution with excellent facilities' },
+        { name: 'Moshi Bus Terminal', distance: '1 km', type: 'commute', details: 'Major transportation hub with connectivity to all parts of Pune' },
+        { name: 'Aditya Birla Hospital', distance: '5.2 km', type: 'healthcare', details: 'Multi-specialty hospital with 24/7 emergency services' },
+        { name: 'Indrayani River View', distance: '3.2 km', type: 'recreation', details: 'Beautiful river view with jogging tracks' },
+        { name: 'Pune-Nashik Highway', distance: '0.8 km', type: 'connectivity', details: 'Easy access to major highway for intercity travel' },
+        { name: 'D Mart Supermarket', distance: '2.1 km', type: 'shopping', details: 'Large retail store for everyday shopping needs' }
+      ],
+      nearby: {
+        schools: [
+          { name: 'D Y Patil International School', distance: '1.8 km', rating: 4.6, details: 'CBSE curriculum, Grades KG-12' },
+          { name: 'Priyadarshani School', distance: '3.2 km', rating: 4.2, details: 'State board with modern facilities' },
+          { name: 'Podar International School', distance: '4.5 km', rating: 4.4, details: 'ICSE curriculum school' }
+        ],
+        hospitals: [
+          { name: 'Aditya Birla Hospital', distance: '5.2 km', rating: 4.5, details: 'Multi-specialty hospital with emergency services' },
+          { name: 'Noble Hospital', distance: '6.1 km', rating: 4.2, details: 'Advanced healthcare facility' }
+        ],
+        shopping: [
+          { name: 'D Mart', distance: '2.1 km', rating: 4.3, details: 'Supermarket for daily needs' },
+          { name: 'Nexus Westend Mall', distance: '7.8 km', rating: 4.5, details: 'Shopping mall with entertainment options' }
+        ],
+        restaurants: [
+          { name: 'Hotel Ashoka', distance: '1.5 km', rating: 4.0, details: 'Multi-cuisine restaurant' },
+          { name: 'Spice Garden', distance: '2.8 km', rating: 4.2, details: 'Family restaurant with outdoor seating' }
+        ],
+        transportation: [
+          { name: 'Moshi Bus Terminal', distance: '1.0 km', details: 'Major bus terminal with city and intercity services' },
+          { name: 'Dehu Road Railway Station', distance: '8.5 km', details: 'Railway connectivity to major cities' }
+        ]
+      }
     },
     images: [
-      { url: '/images/placeholders/property1.svg', alt: 'Shankeshwar Sparsh Exterior' },
-      { url: '/images/placeholders/property2.svg', alt: 'Shankeshwar Sparsh Children\'s Play Area' },
-      { url: '/images/placeholders/property3.svg', alt: 'Shankeshwar Sparsh Interior' },
+      { url: '/images/property/shankeshwar-sparsh/exterior/sparsh-exterior-1.jpeg', alt: 'Shankeshwar Sparsh Exterior', type: 'exterior' },
+      { url: '/images/property/shankeshwar-sparsh/interior/sparsh-interior-1.jpeg', alt: 'Shankeshwar Sparsh Living Room', type: 'interior' },
+      { url: '/images/property/shankeshwar-sparsh/exterior/sparsh-exterior-4.jpeg', alt: 'Shankeshwar Sparsh Living Room', type: 'interior' },
+      // { url: '/images/property/shankeshwar-sparsh/amenities/sparsh-play-area.jpeg', alt: 'Children\'s Play Area', type: 'amenity' },
+      { url: '/images/property/shankeshwar-sparsh/exterior/sparsh-exterior-2.jpeg', alt: 'Shankeshwar Sparsh Building View', type: 'exterior' },
+      { url: '/images/property/shankeshwar-sparsh/interior/sparsh-interior-2.jpeg', alt: 'Modern Kitchen', type: 'interior' },
+      // { url: '/images/property/shankeshwar-sparsh/amenities/sparsh-daycare.jpeg', alt: 'Day Care Center', type: 'amenity' }
     ],
-    unitTypes: [
+    flatTypes: [
       { 
-        name: '1 BHK Compact', 
-        size: { min: 650, max: 700 },
-        price: { min: 3800000, max: 4200000 }
+        type: '1 BHK',
+        configurations: [
+          {
+            name: '1 BHK - 650',
+            carpetArea: 520,
+            builtUpArea: 600,
+            superBuiltUpArea: 650,
+            price: 3800000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-1bhk-650-2d.png',
+            bedrooms: 1,
+            bathrooms: 1,
+            balconies: 1,
+            additionalRooms: [],
+            facing: 'East',
+          },
+          {
+            name: '1 BHK - 675',
+            carpetArea: 540,
+            builtUpArea: 620,
+            superBuiltUpArea: 675,
+            price: 3950000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-1bhk-675-2d.png',
+            bedrooms: 1,
+            bathrooms: 1,
+            balconies: 1,
+            additionalRooms: [],
+            facing: 'North-East',
+          },
+          {
+            name: '1 BHK - 700',
+            carpetArea: 560,
+            builtUpArea: 645,
+            superBuiltUpArea: 700,
+            price: 4200000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-1bhk-700-2d.png',
+            bedrooms: 1,
+            bathrooms: 1,
+            balconies: 1,
+            additionalRooms: ['Study Nook'],
+            facing: 'West',
+          }
+        ]
       },
       { 
-        name: '2 BHK Standard', 
-        size: { min: 950, max: 1050 },
-        price: { min: 5500000, max: 6200000 }
+        type: '2 BHK',
+        configurations: [
+          {
+            name: '2 BHK - 950',
+            carpetArea: 760,
+            builtUpArea: 875,
+            superBuiltUpArea: 950,
+            price: 5500000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-2bhk-950-2d.png',
+            bedrooms: 2,
+            bathrooms: 2,
+            balconies: 1,
+            additionalRooms: [],
+            facing: 'North-East',
+          },
+          {
+            name: '2 BHK - 1000',
+            carpetArea: 800,
+            builtUpArea: 920,
+            superBuiltUpArea: 1000,
+            price: 5800000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-2bhk-1000-2d.png',
+            bedrooms: 2,
+            bathrooms: 2,
+            balconies: 1,
+            additionalRooms: [],
+            facing: 'South-East',
+          },
+          {
+            name: '2 BHK - 1050',
+            carpetArea: 840,
+            builtUpArea: 965,
+            superBuiltUpArea: 1050,
+            price: 6200000,
+            floorPlan: '/images/property/shankeshwar-sparsh/floorplans/sparsh-2bhk-1050-2d.png',
+            bedrooms: 2,
+            bathrooms: 2,
+            balconies: 2,
+            additionalRooms: ['Study Nook'],
+            facing: 'North-West',
+          }
+        ]
       }
     ],
     amenities: [
-      'Children\'s Play Area',
-      'Day Care Center',
-      'Study Room',
-      'Swimming Pool with Kids Section',
-      'Indoor Games',
-      'Library',
-      'Outdoor Sports Area',
-      '24/7 Security'
+      { name: 'Children\'s Play Area', category: 'recreational' },
+      { name: 'Day Care Center', category: 'convenience' },
+      { name: 'Study Room', category: 'educational' },
+      { name: 'Swimming Pool with Kids Section', category: 'recreational' },
+      { name: 'Indoor Games', category: 'recreational' },
+      { name: 'Library', category: 'educational' },
+      { name: 'Outdoor Sports Area', category: 'recreational' },
+      { name: '24/7 Security', category: 'security' },
+      { name: 'CCTV Surveillance', category: 'security' },
+      { name: 'Landscaped Gardens', category: 'recreational' },
+      { name: 'Clubhouse', category: 'recreational' },
+      { name: 'Gymnasium', category: 'recreational' },
+      { name: 'Jogging Track', category: 'recreational' },
+      { name: 'Gazebo', category: 'recreational' },
+      { name: 'Vastu Compliant', category: 'design' },
+      { name: 'Solar Energy', category: 'sustainability' },
+      { name: 'Closed Car Parking', category: 'convenience' },
+      { name: 'Open Parking', category: 'convenience' },
+      { name: '24x7 Water Supply', category: 'convenience' },
+      { name: 'Street Lighting', category: 'security' },
+      { name: 'Senior Citizen Sitout', category: 'convenience' },
+      { name: 'Intercom', category: 'security' },
+      { name: 'Power Backup', category: 'convenience' }
     ],
     totalUnits: 120,
     completionDate: 'June 2025',
@@ -338,22 +461,9 @@ const mockProperties = [
     },
     startingPrice: 3800000,
     completionPercentage: 60,
-    brochure: '/documents/shankeshwar-sparsh-brochure.pdf',
-    videoTour: 'https://www.youtube.com/watch?v=example2',
-    floorPlans: [
-      { name: '1 BHK Floor Plan', image: '/images/placeholders/property4.svg' },
-      { name: '2 BHK Floor Plan', image: '/images/placeholders/property5.svg' },
-    ],
-    keyFeatures: [
-      'Child-friendly Design',
-      'Safe Play Areas',
-      'Learning Spaces',
-      'Dedicated Children\'s Pool',
-      'Smart Home Features',
-      'CCTV Monitoring',
-      'Air Purification System',
-      'Eco-friendly Materials'
-    ],
+    brochureUrl: 'https://example.com/brochures/shankeshwar-sparsh-brochure.pdf',
+    floorPlanPdf: 'https://example.com/floorplans/shankeshwar-sparsh-floorplans.pdf',
+    videoUrl: 'https://www.youtube.com/embed/KoTJEPP-5Z8',
     specifications: {
       structure: 'RCC framed structure with child-safe design',
       walls: 'Non-toxic paint and child-safe wall finishes',
@@ -375,7 +485,19 @@ const mockProperties = [
         { name: 'Flooring', percentage: 30 },
         { name: 'Finishing', percentage: 15 }
       ]
-    }
+    },
+    projectOverview: {
+      total_area: '3.6 Acres',
+      total_buildings: '2 Towers',
+      total_units: '120 Apartments',
+      unit_variants: '1 & 2 BHK',
+      open_space: '60% of Total Area',
+      car_parking: '1 per Apartment',
+      completion_date: 'June 2025',
+      possession_date: 'September 2025'
+    },
+    contactPhone: '+919876543210',
+    contactEmail: 'sales@shankeshwarrealty.com'
   },
   {
     id: 'skyline-one',
